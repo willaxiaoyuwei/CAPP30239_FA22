@@ -3,13 +3,13 @@
 <P>Trending videos can show what audience really want to watch all over the world. </P>
 
 ## Data source, description and features
-### The data has been scrapped from "Mendeley.com". The source of this file ishttps://data.mendeley.com/datasets/7pkbvjtnxm/1/files/e7763107-45e9-4613-8c81-146e6a272266 
+<P>The data has been scrapped from "Mendeley.com". The source of this file ishttps://data.mendeley.com/datasets/7pkbvjtnxm/1/files/e7763107-45e9-4613-8c81-146e6a272266 </P>
 <P> 1. `Trending videos on youtube dataset.csv`</P>
     <P>- 1) Channel Id ( Stirng ) - ID of the youtube channel</P>
-    - 2) Channel Title ( String ) - Youtube channel title
-    - 3) Video Id (String) - ID of video in the youtube channel
-    - 4) Published At (String) - date of the video published at
-    - 5) Video Title (String ) - Title of the video
+    <P>- 2) Channel Title ( String ) - Youtube channel title</P>
+    <P>- 3) Video Id (String) - ID of video in the youtube channel</P>
+    <P>- 4) Published At (String) - date of the video published at</P>
+    <P>- 5) Video Title (String ) - Title of the video</P>
     - 6) Video Description (String) - Description of the video(what the video is about)
     - 6 Video Category Id ( int type) - Category of the video in youtube channel
     - 7 Video Category Label (String) - type of category the video belongs
