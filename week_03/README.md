@@ -10,20 +10,20 @@
     <P>- 3) Video Id (String) - ID of video in the youtube channel</P>
     <P>- 4) Published At (String) - date of the video published at</P>
     <P>- 5) Video Title (String ) - Title of the video</P>
-    - 6) Video Description (String) - Description of the video(what the video is about)
-    - 6 Video Category Id ( int type) - Category of the video in youtube channel
-    - 7 Video Category Label (String) - type of category the video belongs
-    - 8 Duration (String ) - duration of the video
-    - 9 Duration Sec ( int type) - Duration of video in seconds
-    - 10 Dimension (String) - Dimension of the video (2D , Hd)
-    - 11 Definition (String) - Defining the video
-    - 12 Caption (bool ) - Boolean type caption (True or False)
-    - 13 Licensed Content (float Type)
-    - 14 View Count ( int type) - number of people viewed the video
-    - 15 Like Count (float) - Number of likes the channel got
-    - 16 Dislike Count (float) - Number of dislikes the channel got
-    - 17 Favorite Count ( int type) - Number of people marked as favourite
-    - 18 Comment Count (float) - Number of people commented on the video
+    <p>- 6) Video Description (String) - Description of the video(what the video is about)</p>
+    <p>- 6 Video Category Id ( int type) - Category of the video in youtube channel</p>
+    <p>- 7 Video Category Label (String) - type of category the video belongs</p>
+    <p>- 8 Duration (String ) - duration of the video</p>
+    <p>- 9 Duration Sec ( int type) - Duration of video in seconds</p>
+    <p>- 10 Dimension (String) - Dimension of the video (2D , Hd)</p>
+    <p>- 11 Definition (String) - Defining the video</p>
+    <p>- 12 Caption (bool ) - Boolean type caption (True or False)</p>
+    <p>- 13 Licensed Content (float Type)</p>
+    <p>- 14 View Count ( int type) - number of people viewed the video</p>
+    <p>- 15 Like Count (float) - Number of likes the channel got</p>
+    <p>- 16 Dislike Count (float) - Number of dislikes the channel got</p>
+    <p>- 17 Favorite Count ( int type) - Number of people marked as favourite</p>
+    <p>- 18 Comment Count (float) - Number of people commented on the video</p>
 
 ## Why interested and how I would use the data 
 ### Why:  
