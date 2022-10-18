@@ -4,7 +4,7 @@
 d3.csv("library_visits_jan22.csv").then(data => {
 
     for (let d of data) {
-        d.cases = +d.cases; //force a number
+        d.num = +d.num; //force a number
     };
 
     const height = 600,
@@ -16,12 +16,12 @@ d3.csv("library_visits_jan22.csv").then(data => {
         .attr("viewBox", [0, 0, width, height]); // for resizing element in browser
     
     let x = d3.scaleBand()
-        .domain(data.map(d => d.country)) // data, returns array
+        .domain(data.map(d => d.branch)) // data, returns array
         .range([margin.left, width - margin.right]) // pixels on page
         .padding(0.1);
     
     let y = d3.scaleLinear()
-        .domain([0, d3.max(data, d => d.cases)]).nice() // nice rounds the top number
+        .domain([0, d3.max(data, d => d.num)]).nice() // nice rounds the top number
         .range([height - margin.bottom, margin.top]); //svgs are built from top down, so this is reversed
     
     /* Update: simplfied axes */
