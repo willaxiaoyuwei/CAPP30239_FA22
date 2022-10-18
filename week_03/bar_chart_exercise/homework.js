@@ -7,7 +7,7 @@ d3.csv("library_visits_jan22.csv").then(data => {
         d.num = +d.num; //force a number
     };
 
-    const height = 600,
+    const height = 700,
           width = 800,
           margin = ({ top: 25, right: 30, bottom: 35, left: 50 });
 
@@ -48,8 +48,8 @@ d3.csv("library_visits_jan22.csv").then(data => {
     
     bar.append('text') // add labels
         .text(d => d.num)
-        .attr('x', d => x(d.country) + (x.bandwidth()/2))
-        .attr('y', d => y(d.branch) + 15)
+        .attr('x', d => x(d.branch) + (x.bandwidth()/2))
+        .attr('y', d => y(d.num) + 15)
         .attr('text-anchor', 'middle')
         .style('fill', 'white');
 
