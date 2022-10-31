@@ -18,5 +18,9 @@
 			<td>netflix_clean.csv</td>
 			<td>This is post clean dataset</td>
 		</tr>
+        <tr>
+			<td>MoviesOnStreamingPlatforms.csv</td>
+			<td>This is second dataset that I can compare with different video streaming platform</td>
+		</tr>
 	</tbody>
 </table>
