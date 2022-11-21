@@ -1,0 +1,52 @@
+state,total_area,state_name,inland_area,,,State,USPS Abbrev
+Alabama,52420,AL,50645,,,Alabama,AL
+Alaska,665384,AK,570641,,,Alaska,AK
+Arizona,113990,AZ,113594,,,Arizona,AZ
+Arkansas,53179,AR,52035,,,Arkansas,AR
+California,163695,CA,155779,,,California,CA
+Colorado,104094,CO,103642,,,Colorado,CO
+Connecticut,5543,CT,4842,,,Connecticut,CT
+Delaware,2489,DE,1949,,,Delaware,DE
+Florida,65758,FL,53625,,,Florida,FL
+Georgia,59425,GA,57513,,,Georgia,GA
+Hawaii,10932,HI,6423,,,Hawaii,HI
+Idaho,83569,ID,82643,,,Idaho,ID
+Illinois,57914,IL,55519,,,Illinois,IL
+Indiana,36420,IN,35826,,,Indiana,IN
+Iowa,56273,IA,55857,,,Iowa,IA
+Kansas,82278,KS,81759,,,Kansas,KS
+Kentucky,40408,KY,39486,,,Kentucky,KY
+Louisiana,52378,LA,43204,,,Louisiana,LA
+Maine,35380,ME,30843,,,Maine,ME
+Maryland,12406,MD,9707,,,Maryland,MD
+Massachusetts,10554,MA,7800,,,Massachusetts,MA
+Michigan,96714,MI,56539,,,Michigan,MI
+Minnesota,86936,MN,79627,,,Minnesota,MN
+Mississippi,48432,MS,46923,,,Mississippi,MS
+Missouri,69707,MO,68742,,,Missouri,MO
+Montana,147040,MT,145546,,,Montana,MT
+Nebraska,77348,NE,76824,,,Nebraska,NE
+Nevada,110572,NV,109781,,,Nevada,NV
+New Hampshire,9349,NH,8953,,,New Hampshire,NH
+New Jersey,8723,NJ,7354,,,New Jersey,NJ
+New Mexico,121590,NM,121298,,,New Mexico,NM
+New York,54555,NY,47126,,,New York,NY
+North Carolina,53819,NC,48618,,,North Carolina,NC
+North Dakota,70698,ND,69001,,,North Dakota,ND
+Ohio,44826,OH,40861,,,Ohio,OH
+Oklahoma,69899,OK,68595,,,Oklahoma,OK
+Oregon,98379,OR,95988,,,Oregon,OR
+Pennsylvania,46054,PA,44743,,,Pennsylvania,PA
+Rhode Island,1545,RI,1034,,,Rhode Island,RI
+South Carolina,32020,SC,30061,,,South Carolina,SC
+South Dakota,77116,SD,75811,,,South Dakota,SD
+Tennessee,42144,TN,41235,,,Tennessee,TN
+Texas,268596,TX,261232,,,Texas,TX
+Utah,84897,UT,82170,,,Utah,UT
+Vermont,9616,VT,9217,,,Vermont,VT
+Virginia,42775,VA,39490,,,Virginia,VA
+Washington,71298,WA,66456,,,Washington,WA
+West Virginia,24230,WV,24038,,,West Virginia,WV
+Wisconsin,65496,WI,54158,,,Wisconsin,WI
+Wyoming,97813,WY,97093,,,Wyoming,WY
+District of Columbia,68,DC,61,,,,

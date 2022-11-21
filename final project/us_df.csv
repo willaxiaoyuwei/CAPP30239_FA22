@@ -1,0 +1,106 @@
+YEAR,TRAN,count
+2005,WFH,51674
+2005,bicycle or motorcycle,7403
+2005,other,10119
+2005,private carpool,135782
+2005,public,49561
+2005,taxi,1341
+2005,walk,30934
+2006,WFH,57655
+2006,bicycle or motorcycle,8516
+2006,other,10721
+2006,private carpool,142827
+2006,public,53914
+2006,taxi,1395
+2006,walk,36509
+2007,WFH,59896
+2007,bicycle or motorcycle,8747
+2007,other,10655
+2007,private carpool,139885
+2007,public,54356
+2007,taxi,1385
+2007,walk,36130
+2008,WFH,60558
+2008,bicycle or motorcycle,11349
+2008,other,10969
+2008,private carpool,150124
+2008,public,58211
+2008,taxi,1327
+2008,walk,36740
+2009,WFH,61281
+2009,bicycle or motorcycle,9855
+2009,other,10006
+2009,private carpool,137331
+2009,public,56033
+2009,taxi,1318
+2009,walk,36119
+2010,WFH,60595
+2010,bicycle or motorcycle,9540
+2010,other,10243
+2010,private carpool,131838
+2010,public,56173
+2010,taxi,1261
+2010,walk,34891
+2011,WFH,63337
+2011,bicycle or motorcycle,10610
+2011,other,10411
+2011,private carpool,131757
+2011,public,59250
+2011,taxi,1239
+2011,walk,41327
+2012,WFH,64449
+2012,bicycle or motorcycle,11231
+2012,other,10547
+2012,private carpool,134338
+2012,public,59311
+2012,taxi,1229
+2012,walk,40632
+2013,WFH,64891
+2013,bicycle or motorcycle,11359
+2013,other,11600
+2013,private carpool,130921
+2013,public,63429
+2013,taxi,1273
+2013,walk,41287
+2014,WFH,67437
+2014,bicycle or motorcycle,11471
+2014,other,11849
+2014,private carpool,130239
+2014,public,64692
+2014,taxi,1305
+2014,walk,41011
+2015,WFH,70216
+2015,bicycle or motorcycle,11006
+2015,other,11875
+2015,private carpool,128293
+2015,public,66161
+2015,taxi,1487
+2015,walk,41873
+2016,WFH,76932
+2016,bicycle or motorcycle,10853
+2016,other,11881
+2016,private carpool,130143
+2016,public,65552
+2016,taxi,1794
+2016,walk,41719
+2017,WFH,80759
+2017,bicycle or motorcycle,10613
+2017,other,12291
+2017,private carpool,131410
+2017,public,65741
+2017,taxi,2411
+2017,walk,41768
+2018,WFH,83730
+2018,bicycle or motorcycle,10071
+2018,other,12733
+2018,private carpool,134263
+2018,public,65474
+2018,taxi,2736
+2018,walk,41324
+2019,WFH,90829
+2019,bicycle or motorcycle,10096
+2019,other,13535
+2019,private carpool,134431
+2019,public,67986
+2019,taxi,2860
+2019,walk,42640

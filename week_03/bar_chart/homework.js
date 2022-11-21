@@ -1,56 +1,60 @@
-/* based on the code we learnt from class */
-/* Bar chart for  */
+/* Age histogram */
 
-d3.csv("library_visits_jan22.csv").then(data => {
+const height = 250,
+          width = 500,
+          margin = ({ top: 25, right: 10, bottom: 50, left: 10 }),
+          padding = 1;
 
-    for (let d of data) {
-        d.num = +d.num; //force a number
-    };
-
-    const height = 700,
-          width = 800,
-          margin = ({ top: 25, right: 30, bottom: 35, left: 50 });
-
-    let svg = d3.select("#chart")
+    const svg = d3.select("#hist_chart")
         .append("svg")
-        .attr("viewBox", [0, 0, width, height]); // for resizing element in browser
-    
-    let x = d3.scaleBand()
-        .domain(data.map(d => d.branch)) // data, returns array
-        .range([margin.left, width - margin.right]) // pixels on page
-        .padding(0.1);
-    
-    let y = d3.scaleLinear()
-        .domain([0, d3.max(data, d => d.num)]).nice() // nice rounds the top number
-        .range([height - margin.bottom, margin.top]); //svgs are built from top down, so this is reversed
-    
-    /* Update: simplfied axes */
-    svg.append("g")
-        .attr("transform", `translate(0,${height - margin.bottom + 5})`) // move location of axis
-        .call(d3.axisBottom(x)); // for doing this we append bottom x-axis
-    
-    svg.append("g")
-        .attr("transform", `translate(${margin.left - 5},0)`)
-        .call(d3.axisLeft(y)); // append y-axis
+        .attr("viewBox", [0, 0, width, height]);
 
-    let bar = svg.selectAll(".bar") // create bar groups
-        .append("g")
-        .data(data)
-        .join("g")
-        .attr("class", "bar");
+d3.json("a3cleanedonly2015.json").then((data) => {
 
-    bar.append("rect") // add rect to bar group
-        .attr("fill", "steelblue")
-        .attr("x", d => x(d.branch)) // according to the instruction x position attribute
-        .attr("width", x.bandwidth()) // this width is the width attr on the element
-        .attr("y", d => y(d.num)) // according to the instruction y position attribute
-        .attr("height", d => y(0) - y(d.num)); // this height is the height attr on element
+    const x = d3.scaleLinear()
+        .range([margin.left, width - margin.right])
+        .domain(d3.extent(data, d => d.Age)).nice();
     
-    bar.append('text') // add labels
-        .text(d => d.num)
-        .attr('x', d => x(d.branch) + (x.bandwidth()/2))
-        .attr('y', d => y(d.num) + 15)
-        .attr('text-anchor', 'middle')
-        .style('fill', 'white');
+    const y = d3.scaleLinear()
+        .range([height - margin.bottom, margin.top])
+        .domain([0,500]); 
+        
+    svg.append("g")
+        .attr("transform", `translate(0,${height - margin.bottom + 5})`)
+        .call(d3.axisBottom(x));
+
+    const binGroups = svg.append("g")
+        .attr("class", "bin-group");
+
+    const bins = d3.bin()
+        .thresholds(10)
+        .value(d => d.Age)(data);
+
+    let g = binGroups.selectAll("g")
+        .data(bins)
+        .join("g");
+
+    g.append("rect")
+        .attr("x", d => x(d.x0) + (padding / 2)) 
+        .attr("y", d => y(d.length)) 
+        .attr("width", d => x(d.x1) - x(d.x0) - padding)
+        .attr("height", d => height - margin.bottom - y(d.length))
+        .attr("fill", "purple");
+
+    g.append("text")
+        .text(d => d.length)
+        .attr("x", d => x(d.x0) + (x(d.x1) - x(d.x0)) / 2)
+        .attr("y", d => y(d.length) - 10)
+        .attr("text-anchor", "middle")
+        .attr("fill", "#333");
+    
+    svg.append("text")
+      .attr("class", "x-label")
+      .attr("text-anchor", "end")
+      .attr("x", width - margin.right)
+      .attr("y", height)
+      .attr("dx", "0.5em")
+      .attr("dy", "-0.5em") 
+      .text("Age (years)");
 
 });
