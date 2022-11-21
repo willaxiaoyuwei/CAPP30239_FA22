@@ -49,6 +49,4 @@ All data found in ACS but the census dataset is pretty large and messy so I did 
 			<td>tran_2019.csv</td>
 			<td>Due to the huge data set from us_df, I decided to only use 2019 data in my final project. This is final cleaned version.</td>
 		</tr>
-    
-	</tbody>
 </table>
