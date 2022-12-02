@@ -14,7 +14,7 @@ All data found in ACS but the census dataset is pretty large and messy so I did 
 			<td>Content</td>
 		</tr>
 		<tr>
-			<td>homework.html</td>
+			<td>final.html</td>
 			<td>This is the html file that shows the final page</td>
 		</tr>
 		<tr>
@@ -28,6 +28,10 @@ All data found in ACS but the census dataset is pretty large and messy so I did 
         <tr>
 			<td>trans_way.js</td>
 			<td>This is the javascript file that we are learning how to use d3 library and make it combined as data visualization with different transportation way people choose in 2019.</td>
+		</tr>
+		<tr>
+			<td>tran_clean.py</td>
+			<td>The process I used in python to clean my data.</td>
 		</tr>
         <tr>
 			<td>area.csv</td>
@@ -48,5 +52,17 @@ All data found in ACS but the census dataset is pretty large and messy so I did 
         <tr>
 			<td>tran_2019.csv</td>
 			<td>Due to the huge data set from us_df, I decided to only use 2019 data in my final project. This is final cleaned version.</td>
+		</tr>
+		<tr>
+			<td>carpool_and_demographics.csv</td>
+			<td>The data from BTS and after cleaning.</td>
+		</tr>
+		<tr>
+			<td>map.html</td>
+			<td>The U.S. population density choropleth map using Leaflet as an interactive map.</td>
+		</tr>
+		<tr>
+			<td>carpool_chorop.html</td>
+			<td>The carpool rate in 2019 choropleth map using D3 libaray.</td>
 		</tr>
 </table>
