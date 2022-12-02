@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Project: The Way Americans Choose to Commute</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>People's Preference to Commute</h1>
+    <h2>Introduction</h2>
+    <img src="commute.png" alt="from_ruters">
+    <p>This photo is from Reuters showing people commute by train in New York City. 
+      The reason why I choose this photo, because I see myself here as a data journalist to cover the story. </p>
+      <br>
+      <br>
+    <p> This study examines the pattern of car-driving as a way of people within the United States choose to commute. 
+      This project explores how demographic and economic factors affect the way people choose to commute.
+      Bsically, this graphic shows different area by state in US.
+    </p>
+  </div>
+
+  <div class="container">
+    <h2>Area</h2>
+    <p>This is data shows different states' area size in the U.S.</p>
+    <p>Post-cleaning Data using web scrapping from 
+        <a href="https://www.census.gov/geographies/reference-files/2010/geo/state-area.html">
+        ACS</a>
+      </p>
+      <br>
+      <br>
+      <p>My intention for this project is to compare Americans commute choice within different states.
+        First of all, I decide to look up the actual area size for each state then we can have a thorough 
+        thoughts about how large the states would affect the commute choice.
+      </p>
+    <div id="area" class="histogram"></div>
+  </div>
+  
+  <div class="container">
+    <h2>Population</h2>
+    <p>This bar chart shows the population cencus data in 2019.</p>
+    <p>Post-cleaning Data from 
+        <a href="https://www.census.gov/data/developers/data-sets/acs-5year.2019.html#list-tab-9JL60M8D9ZFXGWMEGL">
+        ACS</a>
+      </p>
+      <br>
+      <br>
+      <p>Besides state actual area, I desided to look up the population data in each states. 
+        Similarily, just get a glance for census data in 2019 to start with my project.
+      </p>
+    <div id="population" class="bar"></div>
+  </div>
+
+  <h2>U.S. Population Density Choropleth Map</h2>
+  <p>Post-cleaning Data from 
+    <a href="https://leafletjs.com/examples/choropleth/">
+    Leaflet</a>
+  </p>
+  <p>Previous two plots give us a glance about U.S. population in different states.
+   Now, I would like to use a choropleth map to address the population density within different
+   states.</p>
+   <br>
+   <br>
+  <p>
+   <center>
+   <iframe src="map.html" height="500" width="100%" style="border:none;">
+   </iframe>
+   </center></p>
+
+  <div class="container">
+    <h2>Transportation Way in 2019</h2>
+    <p>This bar chart shows thetransportation way in US in 2019.</p>
+    <br>
+    <br>
+    <p>According to the data that we got, apart from the work form home people,
+      private carpool and public transportation are the two most frequently options 
+      Americans would choose to use as commute ways.
+    </p>
+
+    <p>Post-cleaning Data from 
+        <a href="https://www.census.gov/programs-surveys/acs">
+        ACS</a></p>
+    <div id="way" class="bar"></div>
+  </div>
+
+  <h2>U.S. Carpool Rate in 2019</h2>
+
+  <p>Post-cleaning Data from 
+    <a href="https://www.census.gov/programs-surveys/acs">
+    ACS</a></p>
+
+  <p>Here, I decided to make another choropleth map to show the carpool rate in 2019 within different states.
+    I think the overall rate that we can see here, west coast is more than east coast. Since west coast cities 
+    have larger area compared with east coast. Especially, in the tech hubs of San Jose, San Francisco, and Seattle, 
+    as well as in San Antonio, Houston, and Phoenix.
+  </p>
+   <br>
+   <br>
+  <p>
+   <center>
+   <iframe src="carpool_chorop.html" height="500" width="100%" style="border:none;">
+   </iframe>
+   </center></p>
+
+</body>
+
+<h2>
+  Process and Challenges
+</h2>
+
+<h3>Data Collection and Data Cleaning</h3>
+
+<p>
+  I think as a car-using heavy country, it is interesting to explore the way Americans choose to commute, 
+  especially among drive-alone, carpooling and public transportation. Knowing people's commute Preference
+  within different states could be helpful no matter for building public goods in transportation or environmental
+  protection. To get the access for these data, I went to some census dataset, such as The American Community Survey (ACS),
+  Federal Reserve Economic Data (FRED), Bureau of Transportation Statistics (BTS). 
+  I used ACS dataset as transportation options, carpool & number of riders) related data as our analysis source. 
+  Our census data mainly come from FRED, which allows us to use their API to retrieve population statistics statewide. 
+  Besides these two data sources, we decide to use BTS data to get transportation services within the U.S. by different states. However, since BTS did not 
+  conclude this data as an actual dataset, we could not actually download it directly from their dataset thus we used web scraping to grab their table.
+<br>
+<br>
+  The biggest challenge for me here, I would say, we all know the census data could be super detailed and messy. At first, cleaning a massive dataset was 
+  very time consuming. I used python to pre-cleaning my data to keep something I need.
+  Secondly, when I look up the population census data for 2020, I realize 2020 is the year that COVID pandemic started. Because of 
+  this reason, the census data for 2020 used a experimental model rather than previous yaers' survey filling. Thus, I ended up 
+  choosing 2019's data as my final project data. Plus, because of COVID, there are many Americans start to work from home, which would somehow
+  affect my intention for this project.
+</p>
+
+<h3>Plot Selection</h3>
+
+<p>
+  First of all, I used the three simple bar chart as my start to take viewers to start explore my data about commuting.
+  I think from the basic bar chart, viewers can know the actual size and population about each states in the United States.
+  Then I think probably it is a good way to show a choropleth map to make it more visually about how people choose to commute in different states.
+  I think this could be more directly tell the story that I want to viewer know. But the choropleth map is a little bit challenge for me,
+  I was trying to make a series about choropleth map using D3js library, but still stuck on it a little bit. 
+  <br>
+  <br>
+  I choosed two choropleth maps. The first one is using Leaflet so that viewers can use interact function to see each states in the United States' 
+  population density. The second choropleth map I choose to show the carpool rate within different states. 
+</p>
+<h3>Still need to go further</h3>
+<p>
+  I think my project could be more detailed and expanded into more different years to see the trending. Not only one year estimate,
+  but could be 5 years or 10 years maybe we could tell more correctly how Americans' preference to commute changed and what is the next 
+  trending. Moreover, if I get a change, I want to explore more demographic factors might be affect people's actual choice. 
+</p>
+
+<h3>Data Source</h3>
+<p>
+Leaflet Choropleth Map: https://leafletjs.com/examples/choropleth/
+<br>
+D3 Choropleth Map: https://bl.ocks.org/wboykinm/dbbe50d1023f90d4e241712395c27fb3
+<br>
+The Great Divide in How Americans Commute to Work: https://www.bloomberg.com/news/articles/2019-01-22/how-americans-commute-to-work-in-maps
+<br>
+United States Census Bureau: https://www.census.gov/en.html
+<br>
+Federal Reserve Bank of St. Louis: https://fred.stlouisfed.org/
+</p>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="area.js"></script>
+<script src="pop2019.js"></script>
+<script src="tran_way.js"></script>
+<script src="carpool_chorop.js"></script>
+</html>

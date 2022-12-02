@@ -37,7 +37,7 @@ d3.csv("tran_2019.csv").then(data => {
         .attr("class", "bar");
 
     bar.append("rect") // add rect to bar group
-        .attr("fill", "purple")
+        .attr("fill", "#42a5f5")
         .attr("x", d => x(d.TRAN)) // x position attribute
         .attr("width", x.bandwidth()) // this width is the width attr on the element
         .attr("y", d => y(d.count)) // y position attribute

@@ -37,18 +37,11 @@ d3.csv("pop2019.csv").then(data => {
         .attr("class", "bar");
 
     bar.append("rect") // add rect to bar group
-        .attr("fill", "green")
+        .attr("fill", "#64b5f6")
         .attr("x", d => x(d.state)) // x position attribute
         .attr("width", x.bandwidth()) // this width is the width attr on the element
         .attr("y", d => y(d.population)) // y position attribute
         .attr("height", d => y(0) - y(d.population)); // this height is the height attr on element
-    
-    bar.append('text') // add labels
-        .text(d => d.population)
-        .attr('x', d => x(d.state) + (x.bandwidth()/2))
-        .attr('y', d => y(d.population) + 1)
-        .attr('text-anchor', 'middle')
-        .style('fill', 'black');
 
 });
 

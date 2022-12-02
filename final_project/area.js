@@ -39,17 +39,10 @@ d3.csv("area.csv").then(data => {
         .attr("class", "bar");
 
     bar.append("rect") // add rect to bar group
-        .attr("fill", "steelblue")
+        .attr("fill", "#90caf9")
         .attr("x", d => x(d.state_name)) // x position attribute
         .attr("width", x.bandwidth()) // this width is the width attr on the element
         .attr("y", d => y(d.total_area)) // y position attribute
         .attr("height", d => y(0) - y(d.total_area)); // this height is the height attr on element
-    
-    bar.append('text') // add labels
-        .text(d => d.total_area)
-        .attr('x', d => x(d.state_name) + (x.bandwidth()/2))
-        .attr('y', d => y(d.total_area) + 15)
-        .attr('text-anchor', 'middle')
-        .style('fill', 'black');
 
 });
